@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/birthday-cake.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎉 Happy Birthday Eda! 🎂</title>
+    <meta name="description" content="A magical interactive birthday card for the amazing Eda Saner!" />
+    <meta property="og:title" content="🎉 Happy Birthday Eda! 🎂" />
+    <meta property="og:description" content="Experience this magical interactive birthday celebration!" />
+    <meta property="og:type" content="website" />
+    <style>
+      /* Prevent FOUC (Flash of Unstyled Content) */
+      body {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      body.loaded {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Remove loading state once page is loaded
+      window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+      });
+    </script>
+  </body>
+</html>
