@@ -107,9 +107,9 @@ export function MessageEnvelope({ onEnvelopeOpened, showMessage }: MessageEnvelo
         {/* Message Content */}
         {showMessage && (
           <div className="absolute inset-0 flex items-center justify-center animate-message-reveal">
-            <div className="bg-white/98 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-2xl border-2 border-purple-200 max-w-lg text-center relative overflow-hidden">
+            <div className="bg-white/98 backdrop-blur-sm rounded-2xl shadow-2xl border-2 border-purple-200 text-center relative overflow-hidden" style={{ maxWidth: '792px', margin: '20px auto -4px', padding: '42px 20px 200px 42px' }}>
               {/* Decorative background pattern */}
-              <div className="absolute inset-0 opacity-5">
+              <div className="absolute" style={{ bottom: 0, left: 0, right: 0, top: '208px', width: '273px', opacity: 0.05 }}>
                 <div className="absolute top-4 left-4 text-4xl">🌸</div>
                 <div className="absolute top-8 right-6 text-3xl">✨</div>
                 <div className="absolute bottom-6 left-6 text-3xl">💫</div>
